@@ -1,0 +1,22 @@
+﻿<html>
+	<head>
+		<title>演示输入框</title>
+	</head>
+	<body>
+		<!--form标示表单，将来要将数据提交到服务器-->
+		<!--id标示标签的唯一标识，在同一个页面id不能重复-->
+		<!--action标示表单数据将要提交的后台服务-->
+		<!--method标示表单提交的方式：get，post。如果不写method，默认就是get方式-->
+		<!--
+		<form id="register-form" action="12_form_text.html" method="get">
+      -->
+    <form id="register-form" action="12_form_text.html" method="post">
+      用户名：                      <input id="form-account" type="text"  name="regName" maxlength="20"><br><br>
+      密&nbsp;&nbsp;&nbsp;&nbsp;码：<input id="form-password" type="password" name="pwd" maxlength="6"><br><br>
+      确认密码：<input id="form-confirm-password" type="password" name="pwdRepeat" maxlength="6"><br><br>
+      <button type="submit">立即注册</button>
+		</form>
+	</body>
+</html>
+
+

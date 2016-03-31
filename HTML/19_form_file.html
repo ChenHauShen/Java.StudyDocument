@@ -1,0 +1,33 @@
+﻿<html>
+	<head>
+		<title>20160330学习的表单(form)</title>
+	</head>
+	<body>
+		<!--有文件上传的表单，method必须是post；enctype="multipart/form-data"-->
+		<!--enctype默认是application/x-www-form-urlencoded-->
+		<form id="register-form" action="17_form_textarea.html" method="post" enctype="multipart/form-data">
+			用&nbsp;户&nbsp;名：<input id="form-account" type="text" name="regName" maxlength="20"><br>
+			密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：<input id="form-pwd" type="password" name="pwd"><br>
+			确认密码：<input id="form-confirm-pwd" type="password" name="confirmPwd"><br>
+			我的爱好：踢球<input id="form-ah-tq" type="checkbox" name="ah" value="001" checked>
+								跑步<input id="form-ah-pb" type="checkbox" name="ah" value="002">
+								吃<input id="form-ah-c" type="checkbox" name="ah" value="003"><br>
+			性别：男<input id="form-ah-sex-m" type="radio" name="sex" value="0">
+			      女<input id="form-ah-sex-f" type="radio" name="sex" value="1" checked><br>
+			请选择投资类型：<select name="area" id="selstockinput">
+	                    <option value="">全&nbsp;部</option>
+	                    <option value="HS">股&nbsp;票</option>
+	                    <option value="FN">基&nbsp;金</option>
+	                    <option value="FU">期&nbsp;货</option>
+	                    <option value="HK">港&nbsp;股</option>
+	                    <option value="US">美&nbsp;股</option>
+	                    <option value="FX">外&nbsp;汇</option>
+	                </select>
+	                <br>
+	    自我介绍：<textarea id="form-js" name="js" rows="5" cols="20"></textarea><br>
+	    照片：<input type="file" name="photo"/>
+			<br><input type="submit" value="提交">
+			<input type="datetime-local">
+		</form>
+	</body>
+</html>

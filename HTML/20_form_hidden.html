@@ -1,0 +1,14 @@
+﻿<html>
+	<head>
+		<title>演示隐藏表单(hidden)</title>
+	</head>
+	<body>
+		<form id="register-form" action="20_form_hidden.html" method="get" ENCTYPE="application/x-www-form-urlencoded">
+			<!--hidden表示隐藏域：页面上看不到，但是可以提交到后台-->
+			<input id="stunum" type="hidden" name="studentnum" value="001">
+			<input id="stunum2" type="text" name="studentnum2" value="002" readonly><br>
+			<input id="stunum2" type="text" name="studentnum2" value="002" disabled><br>
+			<input type="submit" value="提交">
+		</form>
+	</body>
+</html>
